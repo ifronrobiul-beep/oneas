@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - E-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">E-Shop</a>
+        </nav>
+    </header>
+
+    <main class="checkout-page">
+        <h2>Checkout</h2>
+        <div class="checkout-container">
+            <div class="checkout-form">
+                <section>
+                    <h3>Shipping Address</h3>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Address" required>
+                    <input type="text" placeholder="City" required>
+                    <input type="text" placeholder="Postal Code" required>
+                </section>
+                <section>
+                    <h3>Payment Information</h3>
+                    <input type="text" placeholder="Card Number" required>
+                    <input type="text" placeholder="Name on Card" required>
+                    <div class="input-group">
+                        <input type="text" placeholder="Expiry Date (MM/YY)" required>
+                        <input type="text" placeholder="CVV" required>
+                    </div>
+                </section>
+            </div>
+            <div class="order-summary">
+                <h3>Your Order</h3>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="summary-total-price">$0.00</span>
+                </div>
+                <button class="btn place-order-btn">Place Order</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 E-Shop. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
