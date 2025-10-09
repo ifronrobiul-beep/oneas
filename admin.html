@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - E-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="admin-body">
+
+    <aside class="admin-sidebar">
+        <div class="sidebar-header">
+            <h3>E-Shop Admin</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="active"><a href="#" data-panel="dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="#" data-panel="products"><i class="fas fa-box"></i> Products</a></li>
+            <li><a href="#" data-panel="orders"><i class="fas fa-receipt"></i> Orders</a></li>
+            <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Exit to Site</a></li>
+        </ul>
+    </aside>
+
+    <main class="admin-main-content">
+        <div id="dashboard-panel" class="admin-panel active">
+            <h2>Dashboard</h2>
+            <div class="stats-grid">
+                <div class="stat-card"><h4>Total Revenue</h4><p>$5,430</p></div>
+                <div class="stat-card"><h4>Orders Today</h4><p>25</p></div>
+                <div class="stat-card"><h4>New Customers</h4><p>12</p></div>
+            </div>
+        </div>
+        <div id="products-panel" class="admin-panel">
+            <h2>Manage Products</h2>
+            <button class="btn">Add New Product</button>
+            </div>
+        <div id="orders-panel" class="admin-panel">
+            <h2>Recent Orders</h2>
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
