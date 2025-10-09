@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop - All Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">E-Shop</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="catalog-main">
+        <aside class="filters">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <h4>Category</h4>
+                <label><input type="checkbox" name="category" value="jackets"> Jackets</label>
+                <label><input type="checkbox" name="category" value="shoes"> Shoes</label>
+                <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <input type="range" min="0" max="500" value="250">
+                <span>$0 - $500</span>
+            </div>
+            <button class="btn">Apply Filters</button>
+        </aside>
+
+        <section class="catalog-products">
+            <div class="product-grid">
+                <div class="product-card">
+                    <a href="product.html"><img src="https://via.placeholder.com/300x300.png?text=Modern+Jacket" alt="Modern Jacket"><h3>Modern Jacket</h3><p class="price">$120.00</p></a>
+                    <button class="btn-add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <a href="product.html"><img src="https://via.placeholder.com/300x300.png?text=Leather+Shoes" alt="Leather Shoes"><h3>Leather Shoes</h3><p class="price">$95.00</p></a>
+                    <button class="btn-add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <a href="product.html"><img src="https://via.placeholder.com/300x300.png?text=Stylish+Watch" alt="Stylish Watch"><h3>Stylish Watch</h3><p class="price">$250.00</p></a>
+                    <button class="btn-add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <a href="product.html"><img src="https://via.placeholder.com/300x300.png?text=Classic+Hat" alt="Classic Hat"><h3>Classic Hat</h3><p class="price">$45.00</p></a>
+                    <button class="btn-add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <a href="product.html"><img src="https://via.placeholder.com/300x300.png?text=Denim+Jeans" alt="Denim Jeans"><h3>Denim Jeans</h3><p class="price">$70.00</p></a>
+                    <button class="btn-add-to-cart">Add to Cart</button>
+                </div>
+                 <div class="product-card">
+                    <a href="product.html"><img src="https://via.placeholder.com/300x300.png?text=Cool+T-Shirt" alt="Cool T-Shirt"><h3>Cool T-Shirt</h3><p class="price">$25.00</p></a>
+                    <button class="btn-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 E-Shop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
